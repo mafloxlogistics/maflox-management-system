@@ -7,6 +7,17 @@ Created on Tue Mar  3 16:38:36 2026
 """
 
 import streamlit as st
+
+st.set_page_config(page_title="Portal MAFLOX", layout="wide")
+
+# Esto fuerza a que Streamlit use el fondo negro y textos dorados
+st.markdown("""
+    <style>
+    .stApp { background-color: #0A0A0A; color: white; }
+    .stButton>button { background-color: #C8861A; color: black; }
+    </style>
+""", unsafe_allow_html=True)
+
 import pandas as pd
 
 # 1. Configuración de la página
